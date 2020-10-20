@@ -14,5 +14,6 @@ fetch(url)
         description.innerText = descriptions
         let temperatures = data.main["temp"]
         let temp = parseInt(temperatures) - 273.15
-        temperature.innerText = temp
+        temperature.innerText = parseInt(temp) + "°C    "
+
     });
