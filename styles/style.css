@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(90deg, #7575d3 10%, #43a1e4 90%);
+}
+
+#submit-btn {
+    background: rgb(41, 41, 41);
+    color: white;
+}
+
+#submit-btn:hover {
+    background-color: #a0a0f3;
+}
+
+
+/* 
+.slid-chart {
+    width: 60%;
+}
+
+
+.more-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plus-info {
+    padding: 16px;
+    background-color: red;
+    height: 200px;
+    margin-top: 0;
+    float: right;
+    width: 40%;
+}
+
+.plus-info h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+} */

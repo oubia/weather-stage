@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="FR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+
     <title>Meteo</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-sm-8 offset-sm-2">
-                <div class="card mt-5 p-3">
-                    <h1>Meteo dans <span id="ville"></span></h1>
-                    <h3 id="date"></h3>
-                    <p id="description">Clear ciel</p>
-                    <img src="" alt="">
-                    <h2 id="temperature"> °C</h2>
+                <form action="" class="d-flex mt-5" id="ville-form">
+                    <input type="text" id="ville-donner" class="form-control">
+                    <input type="submit" value="Recherche la meteo" class="btn  ml-2" id="submit-btn">
+                </form>
+                <div class="card mt-5 p-3" id="info-container">
+                    <div class="meteo-cont">
+                        <h1>Météo dans <span id="ville"></span></h1>
+                        <h3 id="date"></h3>
+                        <p id="description"></p>
+                        <img src="" id="icon" height="50" width="50">
+                        <h2 id="temperature"> </h2>
+                        <div class="more-content">
+                            <h2>Condition Du Température</h2>
+                            <div class="slid-chart">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>
+
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 <script src="js/index.js"></script>
 
